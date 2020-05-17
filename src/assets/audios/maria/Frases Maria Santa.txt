@@ -1,0 +1,24 @@
+LOOSE 1: Pora meu, você perdeu! Um pouco mais de esforço!
+LOOSE 2: Ah, caceta! Pô, perdeu! Perdeu!
+LOOSE 3: Ah! Perdeu! Perdeu! Não prestou atenção, danou-se!
+LOOSE 4: Que isso, que frustração! Perdeu!  
+
+WIN 1: Parabéns, você se saiu muito bem!
+WIN 2: Parabéns! Você conseguiu chegar até o final! 
+WIN 3: Parabéns! Você acertou a maioria!
+WIN 4: Parabéns! Dá próxima vez quero ver acertar todas! hehehe
+
+TOTAL WIN 100% 1: Parabéns, acertou tudo! To orgulhosa de você!
+TOTAL WIN 100% 2: Parabéns! Pô, vcê acertou tudo! Lacrou! Lacrou!
+TOTAL WIN 100% 3: Oh lôko meu! Acertou geral! É isso aí!
+TOTAL WIN 100% 4: Que isso! Acertou tudo! Parabéns! Você é uma pessoa diferenciada!
+
+LOOSE QUESTION 1: Pô, já errou na primeira!
+LOOSE QUESTION 2: Presta atenção!
+LOOSE QUESTION 3: Ah, que burrice!
+LOOSE QUESTION 4: Olha o golpe!
+
+WIN QUESTION 1: Começou bem!
+WIN QUESTION 2: Muito bem!
+WIN QUESTION 3: É isso aí!
+WIN QUESTION 4: Acertou!

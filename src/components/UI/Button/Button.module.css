@@ -1,0 +1,317 @@
+.ColorsToKnow {
+  color: #8097eb;
+  color: #5c74cb;
+  color: #a7d38c;
+  color: #ffcc00;
+  color: #ea7066;
+}
+* {
+  border: none !important;
+  outline: 0 !important;
+  font-family: "Dosis", sans-serif;
+}
+.LinkClear {
+  text-decoration: inherit;
+  width: inherit;
+}
+.Button {
+  background-color: #8097eb;
+  padding: 12px 60px;
+  display: inline-block;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  text-shadow: none;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 12em;
+  outline: 0;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  transition-duration: 0.4s;
+  z-index: 200;
+}
+.Button:hover {
+  background-color: white;
+  color: #8097eb;
+  transform: translateY(-6%);
+  box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+}
+.BtnComingSoon {
+  font-size: 0.6em;
+  width: 7em;
+  color: #a7d38c;
+  background-color: white;
+}
+.BtnComingSoon:hover {
+  background-color: #a7d38c;
+  color: white;
+}
+.BtnGreen {
+  background-color: white;
+  color: #a7d38c;
+}
+.BtnGreen:hover {
+  background-color: #a7d38c;
+  color: white;
+}
+.BtnBlueDark {
+  background-color: white;
+  color: #5c74cb;
+}
+.BtnBlueDark:hover {
+  background-color: #5c74cb;
+  color: white;
+}
+.BtnYellow {
+  background-color: white;
+  color: #ffcc00;
+}
+.BtnYellow:hover {
+  background-color: #ffcc00;
+  color: white;
+}
+.BtnRed {
+  background-color: white;
+  color: #ea7066;
+}
+.BtnRed:hover {
+  background-color: #ea7066;
+  color: white;
+}
+.BtnFullBlue {
+  background-color: white;
+  color: #8097eb;
+}
+.BtnFullBlue:hover {
+  background-color: #8097eb;
+  color: white;
+}
+.BtnFullBlueDark {
+  background-color: white;
+  color: #5c74cb;
+}
+.BtnFullBlueDark:hover {
+  background-color: #5c74cb;
+  color: white;
+}
+.BtnFullGreen {
+  background-color: white;
+  color: #a7d38c;
+}
+.BtnFullGreen:hover {
+  background-color: #a7d38c;
+  color: white;
+}
+.BtnFullYellow {
+  background-color: white;
+  color: #ffcc00;
+}
+.BtnFullYellow:hover {
+  background-color: #ffcc00;
+  color: white;
+}
+.BtnFullOrange {
+  background-color: white;
+  color: #ff9737;
+}
+.BtnFullOrange:hover {
+  background-color: #ff9737;
+  color: white;
+}
+.BtnFullRed {
+  background-color: white;
+  color: #ea7066;
+}
+.BtnFullRed:hover {
+  background-color: #ea7066;
+  color: white;
+}
+.BtnFullPurple {
+  background-color: white;
+  color: #f564fa;
+}
+.BtnFullPurple:hover {
+  background-color: #f564fa;
+  color: white;
+}
+.BtnNotFullBlue {
+  width: 7em;
+  background-color: white;
+  color: #8097eb;
+}
+.BtnNotFullBlue:hover {
+  background-color: #8097eb;
+  color: white;
+}
+.BtnNotFullGreen {
+  width: 7em;
+  background-color: white;
+  color: #a7d38c;
+}
+.BtnNotFullGreen:hover {
+  background-color: #a7d38c;
+  color: white;
+}
+.BtnNotFullYellow {
+  width: 7em;
+  background-color: white;
+  color: #ffcc00;
+}
+.BtnNotFullYellow:hover {
+  background-color: #ffcc00;
+  color: white;
+}
+.BtnNotFullRed {
+  width: 7em;
+  background-color: white;
+  color: #ea7066;
+}
+.BtnNotFullRed:hover {
+  background-color: #ea7066;
+  color: white;
+}
+.BtnMiddleSizeGreen {
+  width: 9em;
+  background-color: white;
+  color: #a7d38c;
+}
+.BtnMiddleSizeGreen:hover {
+  background-color: #a7d38c;
+  color: white;
+}
+.BtnMiddleSizeYellow {
+  width: 9em;
+  background-color: white;
+  color: #ffcc00;
+}
+.BtnMiddleSizeYellow:hover {
+  background-color: #ffcc00;
+  color: white;
+}
+.BtnRight {
+  background-color: #a7d38c;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 15px;
+}
+.BtnRight:hover {
+  background-color: white;
+  color: #a7d38c;
+  transform: translateY(-2%);
+  box-shadow: 0px 10px 21px -17px rgba(0, 0, 0, 0.72);
+}
+.BtnWrong {
+  background-color: #ea7066;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 15px;
+}
+.BtnWrong:hover {
+  background-color: white;
+  color: #ea7066;
+  transform: translateY(-2%);
+  box-shadow: 0px 10px 21px -17px rgba(0, 0, 0, 0.72);
+}
+.BtnBackToHome {
+  background-color: #8097eb;
+  color: white;
+  padding: 6px 60px;
+  border-radius: 10px;
+  outline: 0;
+  font-family: "Dosis", sans-serif;
+  font-size: 2em;
+  border: none;
+  outline: 0;
+  transition-duration: 0.4s;
+}
+.BtnBackToHome:hover {
+  background-color: white;
+  color: #8097eb;
+  transform: translateY(-6%);
+  box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+}
+.BtnPlayAgain {
+  background-color: #5c74cb;
+  color: white;
+  padding: 6px 60px;
+  border-radius: 10px;
+  outline: 0;
+  font-family: "Dosis", sans-serif;
+  font-size: 2em;
+  border: none;
+  outline: 0;
+  transition-duration: 0.4s;
+}
+.BtnPlayAgain:hover {
+  background-color: white;
+  color: #5c74cb;
+  transform: translateY(-6%);
+  box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+}
+.DontShow {
+  display: none;
+}
+.BtnNextQuestion {
+  font-size: 0.9em;
+}
+
+/* ***** MEDIA QUERY SESSION ***** */
+@media (max-width: 1000px) {
+  .Button {
+    font-size: 1.8em;
+  }
+  .BtnComingSoon {
+    font-size: 0.6em;
+    width: 7em;
+  }
+}
+@media (max-width: 900px) {
+  .Button {
+    padding: 10px 50px;
+    font-size: 1.6em;
+  }
+  .BtnPlayAgain,
+  .BtnBackToHome {
+    font-size: 1.2em;
+  }
+  .BtnNextQuestion {
+    font-size: 0.7em;
+  }
+  .BtnComingSoon {
+    font-size: 0.6em;
+    width: 9em;
+  }
+}
+@media (max-width: 750px) {
+  /* LESS MARGIN WHEN flex-direction: column; */
+  .Button {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 700px) {
+  .BtnNextQuestion {
+    font-size: 0.6em;
+  }
+}
+/* ***** CELLPHONE ***** */
+@media (max-width: 600px) {
+  .Button:hover {
+    transform: translateY(-4%);
+  }
+}
+@media (max-width: 500px) {
+  .BtnNextQuestion {
+    font-size: 0.7em;
+  }
+}

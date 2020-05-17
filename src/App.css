@@ -1,0 +1,45 @@
+.App {
+  animation-name: appAnimation;
+  animation-duration: 0.8s;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@keyframes appAnimation {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/*
+NEXT ARE USED TO KEEP THE FOOTER ALWAYS ON THE BOTTOM
+https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/
+*/
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+.content-wrap {
+  padding-bottom: 2.5rem; /* Footer height */
+}
+
+/*
+<!DOCTYPE html>
+<html>
+ <head>
+   <link rel="stylesheet" type="text/css" href="main.css" />
+ </head>
+
+<body>
+ <div id="page-container">
+   <div id="content-wrap">
+     <!-- all other page content -->
+   </div>
+   <footer id="footer"></footer>
+ </div>
+</body>
+</html>
+*/

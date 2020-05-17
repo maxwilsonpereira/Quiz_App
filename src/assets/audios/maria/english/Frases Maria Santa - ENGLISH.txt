@@ -1,0 +1,25 @@
+LOOSE 1: Oh, no! You lost! A little more effort!
+LOOSE 2: Oh, damn it! You lost!
+LOOSE 3: You lost! You lost! Didn't pay attention, you screwed!
+LOOSE 4: What a frustration! You lost!
+
+LOOSE QUESTION 1: Oh, no! Already missed on the first one!
+LOOSE QUESTION 2: Pay attention!
+LOOSE QUESTION 3: Oh, how stupid!
+LOOSE QUESTION 4: I can't believe!
+
+WIN 1: Congratulations, you did great!
+WIN 2: Congratulations! You made it to the end!
+WIN 3: Congratulations! You got the majority right!
+WIN 4: Congratulations! Next time I want to see you get them all! Hahaha!
+
+WIN QUESTION 1: Good start!
+WIN QUESTION 2: Very good!
+WIN QUESTION 3: That's it!
+WIN QUESTION 4: Oh, yes baby!
+
+TOTAL WIN COM ALEGRIA!!!
+TOTAL WIN 100% 1: Congratulations, you got them all right! I'm proud of you!
+TOTAL WIN 100% 2: Congratulations! Damn, you got them all right! Fantastic!
+TOTAL WIN 100% 3: Oh my God! You got them all right! Congrats!
+TOTAL WIN 100% 4: Wow! You got them all right! Congratulations! You are a very special person!

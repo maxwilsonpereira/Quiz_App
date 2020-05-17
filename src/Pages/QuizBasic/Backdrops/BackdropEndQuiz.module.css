@@ -1,0 +1,58 @@
+.BackdropLost {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background-color: #ff6f4d;
+  z-index: 100;
+  animation-name: finalAnimation;
+  animation-duration: 2s;
+}
+.BackdropWin {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  left: 0;
+  top: 0;
+  background-color: #a7d38c;
+  text-align: center;
+  z-index: 100;
+  animation-name: finalAnimation;
+  animation-duration: 2s;
+}
+@keyframes finalAnimation {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.Container {
+  margin: 50px 0px 0px 0px; /* top right bottom left */
+}
+.FinalImage {
+  width: 40%;
+  max-width: 350px;
+  border-radius: 20px;
+}
+@media (max-width: 700px) {
+  .FinalImage {
+    width: 80%;
+    max-width: 350px;
+    border-radius: 20px;
+  }
+}
+/* ***** CELLPHONE ***** */
+@media (max-width: 500px) {
+  .FinalImage {
+    width: 80%;
+    max-width: 350px;
+    border-radius: 20px;
+    margin-top: -30px;
+  }
+}

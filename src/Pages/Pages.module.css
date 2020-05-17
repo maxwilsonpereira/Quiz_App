@@ -1,0 +1,576 @@
+.ColorsCanal {
+  color: #8097eb;
+  color: #5c74cb;
+  color: #ea7066;
+  color: #a7d38c;
+  color: #ffcc00;
+}
+.FontColorBlueLight {
+  color: #8097eb;
+}
+.FontColorBlueDark {
+  color: #5c74cb;
+}
+.FontColorRed {
+  color: #ea7066;
+}
+.FontColorGreen {
+  color: #a7d38c;
+}
+.FontColorYellow {
+  color: #ffcc00;
+}
+.RenderClass {
+  background-color: burlywood;
+}
+.RenderAgainClass {
+  background-color: white;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.responsiveMariaIntro {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+.ResponsiveMute {
+  width: 6%;
+  height: auto;
+  padding: 6px;
+  border-radius: 15px;
+  background-color: #5e74c5;
+  margin-top: -32px;
+  margin-right: 4px;
+  float: right;
+  opacity: 70%;
+  transition: 0.5s;
+}
+.ResponsiveMute:hover {
+  background-color: #374ea1;
+  opacity: 90%;
+}
+.ImageQuestion {
+  border-radius: 20px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+/* PLAY BUTTON WITH PLAY IMG: */
+.BtnPlaySong {
+  border-radius: 10px;
+  background-color: white;
+  color: #a7d38c;
+  font-size: 1.2em;
+  padding: 6px 5px;
+  margin-left: 0px;
+  width: 100%;
+  margin-top: 10px;
+  transition-duration: 0.4s;
+  font-family: "Dosis", sans-serif;
+}
+.BtnPlaySong:hover {
+  background-color: #a7d38c;
+  color: white;
+}
+.ColorsToKnow {
+  color: #8097eb;
+  color: #5c74cb;
+  color: #a7d38c;
+  color: #ffcc00;
+  color: #ea7066;
+}
+.YoutubeContainer {
+  position: relative;
+  padding-bottom: 56.7%;
+  height: 0;
+  margin-bottom: -40px;
+}
+.ResponsiveYoutube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.BtnStartSong {
+  background-color: #5c74cb;
+  padding: 12px 60px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  font-size: 1em;
+
+  border-radius: 10px;
+  width: 7em;
+  border: none !important;
+  outline: 0 !important;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  transition-duration: 0.4s;
+  z-index: 200;
+}
+.BtnStartSong:hover {
+  background-color: white;
+  color: #5c74cb;
+  transform: translateY(-6%);
+  box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 25px 21px -17px rgba(0, 0, 0, 0.72);
+}
+.IntroText {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+/* IntroTextTitle MUST came AFTER IntroText to apply the new font-size */
+.IntroTextTitle {
+  font-size: 3.2em;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.32);
+}
+.IntroTextTitleEn {
+  font-size: 3em;
+}
+.TextAmarelo {
+  text-align: center;
+  font-size: 2.8em;
+  line-height: 1.2;
+  color: #ffcc00;
+}
+.TextBranco {
+  text-align: center;
+  font-size: 2.8em;
+  line-height: 1.2;
+  color: white;
+}
+.YellowFont {
+  color: #ffcc00;
+}
+.RedWrongFont {
+  color: #e44230;
+}
+.GreenCorrectFont {
+  color: #8ad859;
+  line-height: 2em;
+}
+.TextRed {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 2.8em;
+  line-height: 1.2;
+  color: #ea7066;
+}
+.ImageMaria {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+.InfoExtra {
+  padding: 15px;
+  color: #5c74cb;
+  background-color: #b4bee2;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.QuestionLogo {
+  width: 0;
+  height: 0;
+  margin-right: 10px;
+  border-style: solid;
+  border-width: 16px 0 16px 32px;
+  border-color: transparent transparent transparent #5e74c5;
+}
+.QuestionsMobile {
+  margin: 0;
+  padding: 0;
+}
+.LogoIntro {
+  width: 90%;
+}
+.ShowFrameExtraInfo {
+  color: #5c74cb;
+  background-color: #e0e4f3;
+  padding: 20px;
+  border-radius: 15px;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+}
+.FlexBoxParent {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.FlexBoxParent > div {
+  flex: 0 50%;
+}
+.FlexBoxChild {
+  width: 100%;
+  /* margin-bottom: 10px; */
+}
+.FlexboxLimiter {
+  max-width: 800px;
+}
+.FlexBoxParentColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.DontShow {
+  display: none;
+}
+.MarginRight10 {
+  margin-right: 10px;
+}
+.MarginRight20 {
+  margin-right: 20px;
+}
+.MarginRight30 {
+  margin-right: 30px;
+}
+.MarginLeft10 {
+  margin-left: 10px;
+}
+.MarginLeft20 {
+  margin-left: 20px;
+}
+.MarginLeft30 {
+  margin-left: 30px;
+}
+.MarginTop10 {
+  margin-top: 10px;
+}
+.MarginTop20 {
+  margin-top: 20px;
+}
+.MarginTop30 {
+  margin-top: 30px;
+}
+.MarginBottom3 {
+  margin-bottom: 3px;
+}
+.MarginBottom10 {
+  margin-bottom: 10px;
+}
+.MarginBottom20 {
+  margin-bottom: 20px;
+}
+.MarginBottom30 {
+  margin-bottom: 30px;
+}
+.MarginLeftRight10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.MarginLeftRight20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.MarginAll20 {
+  margin: 20px;
+}
+.MarginBottomMinus30 {
+  margin-bottom: -30px;
+}
+.Underline {
+  text-decoration: underline;
+}
+.FlexBox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+.FlexRight {
+  width: 70%;
+  order: 2;
+  text-align: center;
+}
+.FlexLeft {
+  background-color: #8197ec;
+  border-radius: 20px;
+  width: 100%;
+  padding: 25px;
+  margin-left: 40px;
+}
+.FlexBoxColumn {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 20px;
+}
+.FlexBoxColumnRight {
+  background-color: #8197ec;
+  border-radius: 20px;
+  padding: 20px;
+}
+.FlexBoxPlacarRight {
+  background-color: #8197ec;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.FlexBoxColumnLeft {
+  background-color: #8197ec;
+  border-radius: 20px;
+}
+.FlexBoxLogo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.ColorAnimation {
+  transition: all 0.2s ease-in-out;
+}
+.ColorAnimation:hover {
+  transform: scale(1.03);
+  animation: 1s infinite linear;
+  animation-name: color-animation;
+}
+.OnlyShowMobile {
+  display: none;
+}
+@keyframes color-animation {
+  0% {
+    color: #8097eb;
+  }
+  15% {
+    color: #a7d38c;
+  }
+  30% {
+    color: #ffcc00;
+  }
+  45% {
+    color: #8097eb;
+  }
+  60% {
+    color: #ea7066;
+  }
+  75% {
+    color: #a7d38c;
+  }
+  100% {
+    color: #8097eb;
+  }
+}
+
+/* ********** MEDIA QUERIES ********** */
+@media (max-width: 900px) {
+  .IntroText {
+    font-size: 2.5em;
+  }
+  .IntroTextTitle {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .IntroTextTitleEn {
+    font-size: 2.5em;
+  }
+  .TextAmarelo {
+    font-size: 2.4em;
+  }
+  .TextBranco {
+    font-size: 2.4em;
+  }
+  .TextRed {
+    font-size: 2.4em;
+  }
+  .ResponsiveMute {
+    margin-top: -32px;
+  }
+}
+
+@media (max-width: 750px) {
+  .TextPlacar {
+    font-size: 0.9em;
+  }
+  .LineHightLess {
+    line-height: 1.1em;
+  }
+  .FlexBoxParent {
+    display: flex;
+    flex-direction: column;
+  }
+  .IntroText {
+    font-size: 2em;
+  }
+  .IntroTextTitle {
+    font-size: 2.2em;
+  }
+  .TextAmarelo {
+    font-size: 2em;
+  }
+  .TextBranco {
+    font-size: 2.2em;
+  }
+  .TextRed {
+    font-size: 2.2em;
+  }
+  .ResponsiveMute {
+    margin-top: -28px;
+  }
+}
+
+/* ***** MOBILE ***** */
+@media (max-width: 600px) {
+  .OnlyShowMobile {
+    display: block;
+  }
+  .TextPlacar {
+    font-size: 0.7em;
+  }
+  .ShowFrameExtraInfo {
+    padding: 10px;
+  }
+  .ResponsiveMute {
+    margin-top: -22px;
+  }
+  .MarginRight20 {
+    margin: 0;
+  }
+  .TextBranco {
+    font-size: 2em;
+  }
+  .IntroTextTitle {
+    font-size: 1.8em;
+  }
+  .SmallerSmallScreen {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 501px) {
+  .FlexBoxQuestionNumMobile {
+    display: none;
+  }
+  .FlexBoxPlacarMobile {
+    display: none;
+  }
+}
+/* ***** MOBILE ***** */
+@media (max-width: 500px) {
+  .CorrectionQuizMargin {
+    margin-left: 15px;
+  }
+  .ImageMaria {
+    border-radius: 20px;
+    width: 60%;
+    margin-left: 18px;
+    height: auto;
+  }
+  /* DON'T SHOW QUIZ LOGO ON MOBILE: */
+  .LogoQuiz {
+    display: none;
+  }
+  .DesktopOnly {
+    display: none;
+  }
+  .CenteredWrongAnswers {
+    margin-left: 17px;
+  }
+  .MinusMarginTopMobile {
+    margin-top: -20px;
+  }
+  .MobileDontShow {
+    display: none;
+  }
+  .FlexBoxPlacarRight {
+    margin-top: 5px;
+    padding: 0px;
+    width: 100%;
+  }
+  /* .FlexBoxQuestionNumMobile {
+    padding: 10 0px;
+    margin-bottom: 20px;
+    transform: translateX(-10%);
+  } */
+  .FlexBoxPlacarMobile {
+    text-align: center;
+    padding: 11px;
+    padding-bottom: 10px;
+  }
+  .CenterCorrection {
+    margin-left: -28px;
+  }
+  .responsiveMariaIntro {
+    width: 70%;
+  }
+  .IntroText {
+    font-size: 1.6em;
+    line-height: 1.1em;
+  }
+  .IntroTextTitle {
+    font-size: 1.8em;
+  }
+  .TextAmarelo {
+    font-size: 1.4em;
+  }
+  .TextBranco {
+    font-size: 1.5em;
+  }
+  .TextRed {
+    font-size: 1.6em;
+  }
+  .FlexBox {
+    flex-direction: column-reverse;
+    max-width: 75%;
+  }
+  .FlexLeft {
+    max-width: 92%;
+    order: 1;
+    margin-left: 0px;
+  }
+  /* "BOX" IMG Maria Santa */
+  .FlexRight {
+    width: 90%;
+    order: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .FlexBoxColumn {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .FlexBoxColumnRight {
+    padding: 0;
+  }
+  .ChangeOrder {
+    margin-right: 0px;
+    padding: 0;
+    width: 100%;
+  }
+  .AnswersMobile {
+    font-size: 0, 2em;
+  }
+  .QuestionsMobile {
+    font-size: 1.2em;
+  }
+  .ResponsiveMute {
+    margin-top: -25px;
+    position: relative;
+  }
+  .MarginRight20 {
+    margin: 0;
+  }
+}

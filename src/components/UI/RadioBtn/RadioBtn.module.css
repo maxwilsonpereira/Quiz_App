@@ -1,0 +1,72 @@
+/* The container */
+.RadioContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  /* NEXT MARGIN is bellow each botton */
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* Hide the browser's default checkbox */
+.RadioContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.RadioCheckbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  background-color: #eee;
+}
+
+.RadioContainer input:hover ~ .RadioCheckbox {
+  border: 2px solid #eee;
+  background-color: #5c74cb;
+}
+
+/* When the checkbox is checked for RIGHT answers, add a blue background */
+.RadioContainerCorrect input:focus ~ .RadioCheckbox {
+  border: 2px solid #eee;
+  background-color: #8ad859;
+}
+/* When the checkbox is checked for WRONG answers, add a blue background */
+.RadioContainerWrong input:focus ~ .RadioCheckbox {
+  border: 2px solid #eee;
+  background-color: #f35345;
+}
+
+.RadioBtnText {
+  margin-left: 40px;
+  transform: translateY(-2px);
+  font-size: 1.25em;
+}
+/* On mouse-over, add a grey background color */
+/* .RadioContainer:hover:active ~ .RadioCheckbox {
+  background-color: #2196f3;
+} */
+
+/* .RadioContainer:active ~ .RadioCheckbox {
+  background-color: #2196f3;
+}
+*/
+
+/* ***** CELLPHONE ***** */
+@media (max-width: 600px) {
+  .RadioContainer {
+    /* NEXT MARGIN is bellow each botton */
+    margin-bottom: 5px;
+  }
+  .RadioContainer {
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,22 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  /* background-color: #5c74cb; */
+  background-color: #5c74cb;
+  /* max-width: 900px; */
+  /* overflow: hidden; */
+}
+h1,
+h2,
+h3,
+h4,
+div,
+html {
+  padding: 0;
+  margin: 0;
+  text-shadow: 0.5px 0.5px 0.5px #000000;
+}
