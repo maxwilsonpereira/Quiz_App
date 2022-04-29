@@ -1,30 +1,30 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import QuestionValidator from "./QuestionValidator";
-import Backdrop from "../../components/UI/Backdrop/Backdrop";
-import soundCorrect from "../../assets/sounds/correct.mp3";
-import soundWrong from "../../assets/sounds/wrong.mp3";
+import QuestionValidator from './QuestionValidator';
+import Backdrop from '../../components/UI/Backdrop/Backdrop';
+import soundCorrect from '../../assets/sounds/correct.mp3';
+import soundWrong from '../../assets/sounds/wrong.mp3';
 
 // IMPORTING THE QUESTION AUDIOS
 // OBS: winQuestion1 MUST play after the FIRST question!
-import winQuestion1 from "../../assets/audios/maria/win-question1.mp3";
-import winQuestion2 from "../../assets/audios/maria/win-question2.mp3";
-import winQuestion3 from "../../assets/audios/maria/win-question3.mp3";
-import winQuestion4 from "../../assets/audios/maria/win-question4.mp3";
-import looseQuestion1 from "../../assets/audios/maria/loose-question1.mp3";
-import looseQuestion2 from "../../assets/audios/maria/loose-question2.mp3";
-import looseQuestion3 from "../../assets/audios/maria/loose-question3.mp3";
-import looseQuestion4 from "../../assets/audios/maria/loose-question4.mp3";
+import winQuestion1 from '../../assets/audios/maria/win-question1.mp3';
+import winQuestion2 from '../../assets/audios/maria/win-question2.mp3';
+import winQuestion3 from '../../assets/audios/maria/win-question3.mp3';
+import winQuestion4 from '../../assets/audios/maria/win-question4.mp3';
+import looseQuestion1 from '../../assets/audios/maria/loose-question1.mp3';
+import looseQuestion2 from '../../assets/audios/maria/loose-question2.mp3';
+import looseQuestion3 from '../../assets/audios/maria/loose-question3.mp3';
+import looseQuestion4 from '../../assets/audios/maria/loose-question4.mp3';
 // IMPORTING THE QUESTION AUDIOS IN ENGLISH
 // OBS: winQuestion1 MUST play after the FIRST question!
-import winQuestion1En from "../../assets/audios/maria/english/win-question1en.mp3";
-import winQuestion2En from "../../assets/audios/maria/english/win-question2en.mp3";
-import winQuestion3En from "../../assets/audios/maria/english/win-question3en.mp3";
-import winQuestion4En from "../../assets/audios/maria/english/win-question4en.mp3";
-import looseQuestion1En from "../../assets/audios/maria/english/loose-question1en.mp3";
-import looseQuestion2En from "../../assets/audios/maria/english/loose-question2en.mp3";
-import looseQuestion3En from "../../assets/audios/maria/english/loose-question3en.mp3";
-import looseQuestion4En from "../../assets/audios/maria/english/loose-question4en.mp3";
+import winQuestion1En from '../../assets/audios/maria/english/win-question1en.mp3';
+import winQuestion2En from '../../assets/audios/maria/english/win-question2en.mp3';
+import winQuestion3En from '../../assets/audios/maria/english/win-question3en.mp3';
+import winQuestion4En from '../../assets/audios/maria/english/win-question4en.mp3';
+import looseQuestion1En from '../../assets/audios/maria/english/loose-question1en.mp3';
+import looseQuestion2En from '../../assets/audios/maria/english/loose-question2en.mp3';
+import looseQuestion3En from '../../assets/audios/maria/english/loose-question3en.mp3';
+import looseQuestion4En from '../../assets/audios/maria/english/loose-question4en.mp3';
 
 // const winQuestions = [winQuestion2, winQuestion3, winQuestion4];
 // const looseQuestions = [looseQuestion2, looseQuestion3, looseQuestion4];
@@ -34,14 +34,14 @@ class QuizCore extends Component {
     questionNumber: 0,
     countRightAnswers: 0,
     countWrongAnswers: 0,
-    dontShow: "DontShow",
+    dontShow: 'DontShow',
     showNextButton: false,
     showBackdrop: false,
     radioBtnType: null,
     mutedApp: false,
     muteContBtnFunc: false,
-    fontColor: "",
-    showExtraFrameBox: "DontShow",
+    fontColor: '',
+    showExtraFrameBox: 'DontShow',
     mariaSantaCurrent: 0,
     imageQuizCurrent: 0,
     extraInfoLooseShow: null,
@@ -50,7 +50,7 @@ class QuizCore extends Component {
     songsQuiz: null,
     currentSong: 0,
     playingSong: null,
-    ShowBtnPlaySong: "DontShow",
+    ShowBtnPlaySong: 'DontShow',
     winQuestions: [],
     looseQuestions: [],
   };
@@ -81,7 +81,7 @@ class QuizCore extends Component {
           new Audio(this.props.songsQuiz[8]),
           new Audio(this.props.songsQuiz[9]),
         ],
-        ShowBtnPlaySong: "BtnPlaySong",
+        ShowBtnPlaySong: 'BtnPlaySong',
       });
     } else {
       this.setState({
@@ -101,18 +101,18 @@ class QuizCore extends Component {
     }
   }
   componentWillUnmount = () => {
-    window.removeEventListener("popstate", this.onBackButtonEvent);
+    window.removeEventListener('popstate', this.onBackButtonEvent);
   };
   componentDidMount() {
     if (this.props.songsQuiz) {
-      console.log("componentDidMount");
+      console.log('componentDidMount');
       // this.playFirstSong();
     }
     // Recognizing BACK BROWSER BUTTON and executing function
     // to pause the audio (the event MUST the removed on
     // componentWillUnmount):
     window.history.pushState(null, null, window.location.pathname);
-    window.addEventListener("popstate", this.onBackButtonEvent);
+    window.addEventListener('popstate', this.onBackButtonEvent);
   }
   onBackButtonEvent = (e) => {
     // e.preventDefault();
@@ -125,7 +125,7 @@ class QuizCore extends Component {
 
   playFirstSong = () => {
     this.state.songsQuiz[this.state.currentSong].play();
-    this.setState({ ShowBtnPlaySong: "DontShow" });
+    this.setState({ ShowBtnPlaySong: 'DontShow' });
   };
   pauseAndPlaySongHandler = () => {
     this.state.songsQuiz[this.state.currentSong].pause();
@@ -156,7 +156,7 @@ class QuizCore extends Component {
     audio.play();
   }
   muteAndUnmute = () => {
-    console.log("MUTING...");
+    console.log('MUTING...');
     this.setState({
       mutedApp: !this.state.mutedApp,
       muteContBtnFunc: !this.state.muteContBtnFunc,
@@ -166,7 +166,7 @@ class QuizCore extends Component {
   validateAnswerHandler = (props) => {
     // IF ANSWER IS RIGHT:
     if (props === this.props.questions[this.state.questionNumber].answer) {
-      if (this.state.questionNumber == 0) {
+      if (this.state.questionNumber === 0) {
         if (this.props.itsEnglishQuiz) {
           this.playAudioHandler(winQuestion1En);
         } else {
@@ -174,9 +174,9 @@ class QuizCore extends Component {
         }
       } else {
         if (
-          this.state.questionNumber == 3 ||
-          this.state.questionNumber == 5 ||
-          this.state.questionNumber == 7
+          this.state.questionNumber === 3 ||
+          this.state.questionNumber === 5 ||
+          this.state.questionNumber === 7
         ) {
           //RAMDOM: console.log(getRandomInt(3)); output: 0, 1 or 2
           let ramdomNum = Math.floor(Math.random() * Math.floor(3));
@@ -188,27 +188,27 @@ class QuizCore extends Component {
       this.setState({
         radioBtnSound: soundCorrect,
         countRightAnswers: updatedWrite,
-        dontShow: "BtnRight",
+        dontShow: 'BtnRight',
         showBackdrop: true,
-        radioBtnType: "RadioContainerCorrect",
-        fontColor: "GreenCorrectFont",
-        showExtraFrameBox: "DontShow",
+        radioBtnType: 'RadioContainerCorrect',
+        fontColor: 'GreenCorrectFont',
+        showExtraFrameBox: 'DontShow',
         extraInfoLooseShow: null,
-        extraInfoWinShow: this.props.questions[this.state.questionNumber]
-          .extraInfoWin,
+        extraInfoWinShow:
+          this.props.questions[this.state.questionNumber].extraInfoWin,
       });
       // NEXT IF to JUST SHOW the extraInfoWin if it exists (true)
       if (this.props.questions[this.state.questionNumber].extraInfoWin) {
         this.setState({
-          showExtraFrameBox: "ShowFrameExtraInfo",
+          showExtraFrameBox: 'ShowFrameExtraInfo',
         });
       }
-      console.log("RIGHT ANSWER!");
+      console.log('RIGHT ANSWER!');
       this.playCorrectSound();
     }
     // ELSE, WHEN ANSWER IS WRONG:
     else {
-      if (this.state.questionNumber == 0) {
+      if (this.state.questionNumber === 0) {
         if (this.props.itsEnglishQuiz) {
           this.playAudioHandler(looseQuestion1En);
         } else {
@@ -216,10 +216,10 @@ class QuizCore extends Component {
         }
       } else {
         if (
-          (this.state.questionNumber == 3 ||
-            this.state.questionNumber == 5 ||
-            this.state.questionNumber == 7) &&
-          this.state.countWrongAnswers != this.props.wrongAnswerAllowed - 1
+          (this.state.questionNumber === 3 ||
+            this.state.questionNumber === 5 ||
+            this.state.questionNumber === 7) &&
+          this.state.countWrongAnswers !== this.props.wrongAnswerAllowed - 1
         ) {
           //RAMDOM: console.log(getRandomInt(3)); output: 0, 1 or 2
           let ramdomNum = Math.floor(Math.random() * Math.floor(3));
@@ -230,29 +230,29 @@ class QuizCore extends Component {
       const updatedWrong = oldCountWrongAns + 1;
       this.setState({
         radioBtnSound: soundCorrect,
-        dontShow: "BtnWrong",
+        dontShow: 'BtnWrong',
         showBackdrop: true,
-        radioBtnType: "RadioContainerWrong",
-        fontColor: "RedWrongFont",
+        radioBtnType: 'RadioContainerWrong',
+        fontColor: 'RedWrongFont',
         countWrongAnswers: updatedWrong,
-        showExtraFrameBox: "ShowFrameExtraInfo",
+        // showExtraFrameBox: 'ShowFrameExtraInfo',
         mariaSantaCurrent: updatedWrong,
-        showExtraFrameBox: "DontShow",
+        showExtraFrameBox: 'DontShow',
         extraInfoWinShow: null,
-        extraInfoLooseShow: this.props.questions[this.state.questionNumber]
-          .extraInfoLoose,
+        extraInfoLooseShow:
+          this.props.questions[this.state.questionNumber].extraInfoLoose,
       });
       // NEXT IF to JUST SHOW the extraInfoLoose if it exists (true)
       if (this.props.questions[this.state.questionNumber].extraInfoLoose) {
         this.setState({
-          showExtraFrameBox: "ShowFrameExtraInfo",
+          showExtraFrameBox: 'ShowFrameExtraInfo',
         });
       }
       this.playWrongSound();
     }
     this.setState({
-      MobileDontShow: "MobileDontShow",
-      ShowBtnPlaySong: "DontShow",
+      MobileDontShow: 'MobileDontShow',
+      ShowBtnPlaySong: 'DontShow',
     });
   };
 
@@ -266,7 +266,7 @@ class QuizCore extends Component {
     this.setState({
       questionNumber: updatedNumber,
       imageQuizCurrent: updatedNumber,
-      dontShow: "DontShow",
+      dontShow: 'DontShow',
       showBackdrop: false,
       MobileDontShow: null,
     });
@@ -278,6 +278,7 @@ class QuizCore extends Component {
     getAnswers[1] = this.props.questions[this.state.questionNumber].optionb;
     getAnswers[2] = this.props.questions[this.state.questionNumber].optionc;
     getAnswers[3] = this.props.questions[this.state.questionNumber].optiond;
+
     return (
       <>
         {/* The BACKDROP is being used to don't allow user to 
@@ -290,6 +291,7 @@ class QuizCore extends Component {
           countRightAnswers={this.state.countRightAnswers}
           countWrongAnswers={this.state.countWrongAnswers}
           totalQuestions={this.props.totalQuestions}
+          correctAnswer={this.props.questions[this.state.questionNumber].answer}
           text1={this.props.questions[this.state.questionNumber].text1}
           text2={this.props.questions[this.state.questionNumber].text2}
           extraInfoWin={this.state.extraInfoWinShow}

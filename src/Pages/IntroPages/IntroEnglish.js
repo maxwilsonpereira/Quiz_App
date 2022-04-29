@@ -10,6 +10,33 @@ class introEnglish extends Component {
       <>
         <br />
         <img src={logo} className={classes.responsive} alt="QUIZ" />
+        {/* EINSTEIN'S IQ TEST */}
+        {/* <h1
+          className={[
+            classes.IntroText,
+            classes.IntroTextTitle,
+            classes.IntroTextTitleEn,
+            classes.YellowFont,
+          ].join(" ")}
+        >
+          EINSTEIN'S IQ TEST (NEW)
+        </h1>
+        <br /> */}
+        {/* <br className={classes.MobileDontShow} /> */}
+        {/* <div className={classes.centered}>
+          <div className={classes.FlexboxLimiter}>
+            <div className={classes.FlexBoxParent}>
+              <div className={classes.FlexBoxChild}>
+                <Button linkToGo="/einsteinintro-en" btnType="BtnFullRed">
+                  PLAY
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /> */}
+
+        {/* QUIZ GAMES: */}
         <h1
           className={[
             classes.IntroText,
@@ -25,7 +52,7 @@ class introEnglish extends Component {
           divertida!
         </h1> */}
         <br />
-        <br className={classes.MobileDontShow} />
+        {/* <br className={classes.MobileDontShow} /> */}
         <div className={classes.centered}>
           <div className={classes.FlexboxLimiter}>
             <div className={classes.FlexBoxParent}>

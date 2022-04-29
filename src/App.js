@@ -42,6 +42,8 @@ import VoiceQuizIntroEn from "./Pages/ENGLISH-APP/Voice/VoiceQuizIntroEn";
 import VoiceQuizEn from "./Pages/ENGLISH-APP/Voice/VoiceQuizEn";
 import EnglishQuizIntroEn from "./Pages/ENGLISH-APP/English/EnglishQuizIntroEn";
 import EnglishQuizEn from "./Pages/ENGLISH-APP/English/EnglishQuizEn";
+import EinsteinIntroEn from "./Pages/ENGLISH-APP/Einstein/EinsteinIntroEn";
+import EinsteinEn from "./Pages/ENGLISH-APP/Einstein";
 
 // *** ATENTION: THE ORDER OF THE PAGES WILL AFFECT THE RESULTS!
 // *** THE ROOT COMPONENT <Route path="/"> MUST BE AT THE BOTTOM!
@@ -53,6 +55,10 @@ function App() {
           <div className="App">
             <Switch>
               {/* ENGLISH PART: */}
+
+              <Route path="/einstein-en" component={EinsteinEn} />
+              <Route path="/einsteinintro-en" component={EinsteinIntroEn} />
+
               <Route path="/englishquiz-en" component={EnglishQuizEn} />
               <Route
                 path="/englishquizintro-en"

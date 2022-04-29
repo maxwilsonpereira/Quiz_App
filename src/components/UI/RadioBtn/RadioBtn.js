@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import classes from "./RadioBtn.module.css";
-import clickSound from "../../../assets/sounds/click.mp3";
+import classes from './RadioBtn.module.css';
+import clickSound from '../../../assets/sounds/click.mp3';
 // import correctSound from "../../../assets/sounds/correct.mp3";
 // import wrongSound from "../../../assets/sounds/wrong.mp3";
 
@@ -21,7 +21,7 @@ class RadioBtn extends Component {
             className={[
               classes.RadioContainer,
               classes[this.props.radioBtnType],
-            ].join(" ")}
+            ].join(' ')}
           >
             <input
               // type="radio"

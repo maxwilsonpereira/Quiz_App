@@ -1,37 +1,37 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import classes from "../../Pages/Pages.module.css";
-import ButtonFunction from "../../../src/components/UI/Button/ButtonFunction";
-import Button from "../../../src/components/UI/Button/Button";
-import RadioBtn from "../../../src/components/UI/RadioBtn/RadioBtn";
-import muteLogo from "../../../src/assets/images/mute.png";
-import unmuteLogo from "../../../src/assets/images/unmute.png";
-import BackdropLost from "./Backdrops/BackdropLost";
-import BackdropWin from "./Backdrops/BackdropWin";
+import classes from '../../Pages/Pages.module.css';
+import ButtonFunction from '../../../src/components/UI/Button/ButtonFunction';
+import Button from '../../../src/components/UI/Button/Button';
+import RadioBtn from '../../../src/components/UI/RadioBtn/RadioBtn';
+import muteLogo from '../../../src/assets/images/mute.png';
+import unmuteLogo from '../../../src/assets/images/unmute.png';
+import BackdropLost from './Backdrops/BackdropLost';
+import BackdropWin from './Backdrops/BackdropWin';
 // YOUTUBE VIDEOS: npm install react-youtube
 // https://www.npmjs.com/package/react-youtube
 // OPTIONS FOR THE YOUTUBE PLAYER:
 // https://developers.google.com/youtube/player_parameters
-import YouTube from "react-youtube";
+import YouTube from 'react-youtube';
 // DELAY: npm i react-delay
 // https://www.npmjs.com/package/react-delay
-import Delay from "react-delay";
+import Delay from 'react-delay';
 
 const englishPlacar = [];
 const postuguesPlacar = [];
-englishPlacar[0] = "QUESTION: ";
-englishPlacar[1] = "CORRECT: ";
-englishPlacar[2] = "WRONG: ";
-postuguesPlacar[0] = "PERGUNTA: ";
-postuguesPlacar[1] = "ACERTOS: ";
-postuguesPlacar[2] = "ERROS: ";
+englishPlacar[0] = 'QUESTION: ';
+englishPlacar[1] = 'CORRECT: ';
+englishPlacar[2] = 'WRONG: ';
+postuguesPlacar[0] = 'PERGUNTA: ';
+postuguesPlacar[1] = 'ACERTOS: ';
+postuguesPlacar[2] = 'ERROS: ';
 
 class QuestionValidator extends Component {
   state = {
     toggleMute: false,
     muteUnmute: muteLogo,
     placarMensagens: [],
-    nextQuestionText: "",
+    nextQuestionText: '',
   };
   // componentWillUpdate() {
   //   if (this.props.playingSong.pause()) {
@@ -42,12 +42,12 @@ class QuestionValidator extends Component {
     if (this.props.itsEnglishQuiz) {
       this.setState({
         placarMensagens: englishPlacar,
-        nextQuestionText: "NEXT",
+        nextQuestionText: 'NEXT',
       });
     } else {
       this.setState({
         placarMensagens: postuguesPlacar,
-        nextQuestionText: "PRÓXIMA",
+        nextQuestionText: 'PRÓXIMA',
       });
     }
   }
@@ -72,7 +72,7 @@ class QuestionValidator extends Component {
       return (
         <img
           src={this.props.imagesQuiz[this.props.imageQuizCurrent]}
-          className={[classes.responsive, classes.ImageQuestion].join(" ")}
+          className={[classes.responsive, classes.ImageQuestion].join(' ')}
           alt="English Quiz"
         />
       );
@@ -111,7 +111,7 @@ class QuestionValidator extends Component {
     let getAnswers = [];
     let finalScore = 1;
     for (let i = 0; i < this.props.totalAnswers; i++) {
-      getAnswers[i] = "EGAL!";
+      getAnswers[i] = 'EGAL!';
     }
 
     // FINALIZING THE QUIZ FOR LOSE CASE:
@@ -144,7 +144,7 @@ class QuestionValidator extends Component {
         (this.props.countRightAnswers / this.props.totalQuestions) *
         100
       ).toFixed();
-      if (finalScore == 100) {
+      if (finalScore === 100) {
         return (
           <Delay wait={100}>
             <div>
@@ -179,8 +179,8 @@ class QuestionValidator extends Component {
         <br className={classes.MobileDontShow} />
         <img
           src={this.props.quizLogo}
-          className={[classes.responsive, classes.LogoQuiz].join(" ")}
-          alt="English Quiz"
+          className={[classes.responsive, classes.LogoQuiz].join(' ')}
+          alt="Quiz Maria Santa"
         />
         <br className={classes.MobileDontShow} />
         <br />
@@ -194,9 +194,9 @@ class QuestionValidator extends Component {
                     <img
                       src={this.props.mariaSanta[this.props.mariaSantaCurrent]}
                       className={[classes.responsive, classes.ImageMaria].join(
-                        " "
+                        ' '
                       )}
-                      alt="English Quiz"
+                      alt="Quiz Maria Santa"
                     />
                   </div>
                   {/* PLACAR ONLY DESKTOP: */}
@@ -204,15 +204,15 @@ class QuestionValidator extends Component {
                     className={[
                       classes.FlexBoxPlacarRight,
                       classes.DesktopOnly,
-                    ].join(" ")}
+                    ].join(' ')}
                   >
                     <h3 className={classes.TextPlacar}>
-                      {this.state.placarMensagens[0]}{" "}
-                      {this.props.questionNumber + 1} /{" "}
+                      {this.state.placarMensagens[0]}{' '}
+                      {this.props.questionNumber + 1} /{' '}
                       {this.props.totalQuestions}
                     </h3>
                     <span className={classes.GreenCorrectFont}>
-                      {this.state.placarMensagens[1]}{" "}
+                      {this.state.placarMensagens[1]}{' '}
                       {this.props.countRightAnswers}
                     </span>
                     <br />
@@ -220,10 +220,10 @@ class QuestionValidator extends Component {
                       className={[
                         classes.RedWrongFont,
                         classes.SmallerSmallScreen,
-                      ].join(" ")}
+                      ].join(' ')}
                     >
-                      {this.state.placarMensagens[2]}{" "}
-                      {this.props.countWrongAnswers} /{" "}
+                      {this.state.placarMensagens[2]}{' '}
+                      {this.props.countWrongAnswers} /{' '}
                       {this.props.wrongAnswerAllowed}
                     </span>
                     <br />
@@ -263,7 +263,7 @@ class QuestionValidator extends Component {
                   className={[
                     classes.MarginTop20,
                     classes[this.props.MobileDontShow],
-                  ].join(" ")}
+                  ].join(' ')}
                 >
                   {getAnswers.map((answer, index) => {
                     return (
@@ -285,7 +285,7 @@ class QuestionValidator extends Component {
                   className={[
                     classes[this.props.showExtraFrameBox],
                     classes[this.props.dontShow],
-                  ].join(" ")}
+                  ].join(' ')}
                 >
                   {this.props.extraInfoWin}
                   {this.props.extraInfoLoose}
@@ -310,21 +310,21 @@ class QuestionValidator extends Component {
                 className={[
                   classes.FlexBoxPlacarRight,
                   classes.FlexBoxPlacarMobile,
-                ].join(" ")}
+                ].join(' ')}
               >
                 <h3
                   className={[
                     classes.FontColorYelllow,
                     classes.MarginBottom3,
-                  ].join(" ")}
+                  ].join(' ')}
                 >
-                  {this.state.placarMensagens[0]}{" "}
+                  {this.state.placarMensagens[0]}{' '}
                   {this.props.questionNumber + 1} / {this.props.totalQuestions}
                 </h3>
                 <h3>
                   <span className={classes.RedWrongFont}>
-                    {this.state.placarMensagens[2]}{" "}
-                    {this.props.countWrongAnswers} /{" "}
+                    {this.state.placarMensagens[2]}{' '}
+                    {this.props.countWrongAnswers} /{' '}
                     {this.props.wrongAnswerAllowed}
                   </span>
                 </h3>
@@ -333,7 +333,7 @@ class QuestionValidator extends Component {
             <br />
             <span
               className={[classes.centered, classes.CorrectionQuizMargin].join(
-                " "
+                ' '
               )}
             >
               <Button
